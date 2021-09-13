@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% load static %}
+
+
+{% block content %}
+<form method="POST" action="">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input class="btn btn-sm btn-info" type="submit" value="update" />
+</form>
+
+{% endblock %}
